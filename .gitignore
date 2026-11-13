@@ -1,0 +1,43 @@
+# Secrets / config locale
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.so
+.Python
+.venv/
+.venv312/
+venv/
+ENV/
+env/
+
+# Tests / lint / uv
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.uv/
+dist/
+build/
+
+# Sorties runtime / data
+data/
+logs/
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Lien vers la note du second brain (non versionné)
+.contexte.md

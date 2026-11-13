@@ -1,0 +1,20 @@
+name: HA - Devoirs Padlet
+version: "1.0.0"
+slug: devoirs_padlet
+description: Devoirs publiés sur un Padlet de classe, lus par un LLM, vers une liste de tâches Home Assistant
+url: https://github.com/cabatech/ha-devoirs-padlet
+arch:
+  - amd64
+  - aarch64
+init: false
+homeassistant_api: true
+options:
+  padlet_wall_hashid: ""
+  todo_entity: ""
+  ai_task_entity: ""
+  cron: "0 17 * * *"
+schema:
+  padlet_wall_hashid: match(^board_[A-Za-z0-9]+$)
+  todo_entity: match(^todo\.[a-z0-9_]+$)
+  ai_task_entity: match(^ai_task\.[a-z0-9_]+$)
+  cron: str
